@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Patrick Dugan, Compsci Emporium{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h1 class="center-align" style="text-align: center; color: #ffffff; font-size: 100px;">
+        A Coder's Adventures
+    </h1>
+    {%for post in posts%}
+    <br>
+    <div class="card horizontal small" style="background-color: #ff0000;">
+      <div class="card-image">
+        <img src="{{post[2]}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title" style="text-align: center; color: #white; font-weight: bold;">{{post[0]}}</span>
+        <p>Date Published - {{post[3]}}</p>
+        {{post[4]}}
+      </div>
+      <div class="card-action" style="background-color: #ffffff;">
+        <a href="{{post[1]}}" style="color: #ff0000;">Go to Post</a>
+      </div>
+    </div>
+    <br>
+    {%endfor%}
+  </div>
+{% endblock %}

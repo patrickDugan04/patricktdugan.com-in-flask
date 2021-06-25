@@ -1,0 +1,43 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body style="background-color: #383838;">
+  <nav style="background-color: #ff0000;">
+    <div class="nav-wrapper">
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+         <li class="waves-effect waves-light cntr-button">
+           <a class="active" href="https://github.com/patrickDugan04">
+            <i class="fa fa-github">
+            </i>
+              GitHub
+            </a>
+         </li>
+         <li class="waves-effect waves-light cntr-button">
+                 <a class="active" href="/codeblog">
+                     <i class="material-icons left">
+                         create</i>Doing code/math</a>
+         </li>
+         <li class="waves-effect waves-light cntr-button">
+           <a class="active" href="https://leetcode.com/patrickdugan/">
+             <i class="material-icons left">
+                 local_library
+              </i>
+              LeetCode
+            </a>
+         </li>
+        </ul>
+      </div>
+    </nav>
+<br>
+    {% block content %}
+    {% endblock %}
+</body>
+<footer>
+  <p class="center-align" style="text-align: center; color: #ffffff;">
+    Coded by Pat, in Flask
+  </p>
+</footer>
